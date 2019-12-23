@@ -5965,3 +5965,257 @@ Caused by: java.lang.ClassNotFoundException: Login
 13:09:25.009 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 13:09:25.010 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 1.891 seconds (JVM running for 256112.384)
 13:09:25.011 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:38:08.377 [HikariPool-94 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-94 - Thread starvation or clock leap detected (housekeeper delta=23m43s375ms115µs700ns).
+14:51:33.234 [Thread-468] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:51:33.239 [Thread-468] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:51:33.267 [Thread-468] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-94 - Shutdown initiated...
+14:51:33.296 [Thread-468] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-94 - Shutdown completed.
+14:51:35.450 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+14:51:35.518 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+14:51:36.962 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:51:37.039 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 3 repository interfaces.
+14:51:37.162 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:51:37.210 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+14:51:38.545 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:51:38.546 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:51:38.546 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:51:38.786 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:51:38.786 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3264 ms
+14:51:39.093 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:51:39.099 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-95 - Starting...
+14:51:39.106 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-95 - Start completed.
+14:51:39.107 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:51:41.359 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:51:41.359 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:51:41.372 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:51:41.700 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:51:41.759 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:51:41.917 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:51:41.917 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 6.69 seconds (JVM running for 262255.812)
+14:51:41.919 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:57:01.322 [Thread-473] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:57:01.323 [Thread-473] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:57:01.324 [Thread-473] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-95 - Shutdown initiated...
+14:57:01.329 [Thread-473] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-95 - Shutdown completed.
+14:57:01.838 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+14:57:01.838 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+14:57:02.207 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:57:02.243 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 3 repository interfaces.
+14:57:02.326 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:57:02.355 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+14:57:02.768 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:57:02.768 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:57:02.768 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:57:03.009 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:57:03.009 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1168 ms
+14:57:03.058 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:57:03.063 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-96 - Starting...
+14:57:03.069 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-96 - Start completed.
+14:57:03.069 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:57:03.524 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:57:03.525 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:57:03.536 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:57:03.662 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:57:03.704 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:57:03.817 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:57:03.817 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.021 seconds (JVM running for 262577.712)
+14:57:03.818 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:57:59.200 [Thread-478] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:57:59.202 [Thread-478] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:57:59.204 [Thread-478] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-96 - Shutdown initiated...
+14:57:59.211 [Thread-478] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-96 - Shutdown completed.
+14:57:59.679 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+14:57:59.679 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+14:58:00.249 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:58:00.285 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 3 repository interfaces.
+14:58:00.351 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:58:00.381 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+14:58:00.896 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:58:00.897 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:58:00.897 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:58:01.260 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:58:01.260 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1578 ms
+14:58:01.334 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:58:01.340 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-97 - Starting...
+14:58:01.345 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-97 - Start completed.
+14:58:01.346 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:58:01.850 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:58:01.850 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:58:01.861 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:58:02.012 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:58:02.052 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:58:02.149 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:58:02.161 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.575 seconds (JVM running for 262636.055)
+14:58:02.162 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:58:32.133 [Thread-483] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:58:32.134 [Thread-483] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:58:32.135 [Thread-483] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-97 - Shutdown initiated...
+14:58:32.145 [Thread-483] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-97 - Shutdown completed.
+14:58:32.472 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+14:58:32.472 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+14:58:32.795 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:58:32.835 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 3 repository interfaces.
+14:58:32.903 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:58:32.931 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+14:58:33.361 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:58:33.361 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:58:33.361 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:58:33.582 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:58:33.583 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1108 ms
+14:58:33.632 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:58:33.638 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-98 - Starting...
+14:58:33.643 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-98 - Start completed.
+14:58:33.643 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:58:34.117 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:58:34.117 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:58:34.167 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:58:34.314 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:58:34.354 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:58:34.455 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:58:34.455 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.025 seconds (JVM running for 262668.35)
+14:58:34.456 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:01:05.621 [Thread-488] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:01:05.622 [Thread-488] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:01:05.623 [Thread-488] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-98 - Shutdown initiated...
+15:01:05.633 [Thread-488] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-98 - Shutdown completed.
+15:01:06.271 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:01:06.271 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:01:06.647 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:01:06.747 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100ms. Found 3 repository interfaces.
+15:01:06.842 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:01:06.871 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+15:01:07.361 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:01:07.361 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:01:07.361 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+15:01:07.629 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:01:07.629 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1354 ms
+15:01:07.751 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:01:07.756 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-99 - Starting...
+15:01:07.764 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-99 - Start completed.
+15:01:07.764 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:01:08.438 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:01:08.438 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:01:08.453 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:01:08.769 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:01:08.810 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:01:08.939 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:01:08.939 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.746 seconds (JVM running for 262822.834)
+15:01:08.940 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:01:43.603 [Thread-493] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:01:43.604 [Thread-493] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:01:43.604 [Thread-493] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-99 - Shutdown initiated...
+15:01:43.609 [Thread-493] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-99 - Shutdown completed.
+15:01:43.938 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:01:43.938 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:01:44.262 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:01:44.299 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 3 repository interfaces.
+15:01:44.365 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:01:44.394 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+15:01:44.835 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:01:44.835 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:01:44.835 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+15:01:45.044 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:01:45.044 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1102 ms
+15:01:45.100 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:01:45.105 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-100 - Starting...
+15:01:45.111 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-100 - Start completed.
+15:01:45.111 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:01:45.549 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:01:45.549 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:01:45.572 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:01:45.778 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:01:45.819 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:01:45.915 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:01:45.915 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.022 seconds (JVM running for 262859.81)
+15:01:45.916 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:02:41.398 [Thread-498] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:02:41.399 [Thread-498] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:02:41.400 [Thread-498] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-100 - Shutdown initiated...
+15:02:41.410 [Thread-498] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-100 - Shutdown completed.
+15:02:41.878 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:02:41.878 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:02:42.374 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:02:42.412 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 3 repository interfaces.
+15:02:42.480 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:02:42.509 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+15:02:42.980 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:02:42.980 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:02:42.981 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+15:02:43.245 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:02:43.245 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1364 ms
+15:02:43.317 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:02:43.322 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-101 - Starting...
+15:02:43.328 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-101 - Start completed.
+15:02:43.328 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:02:43.882 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:02:43.882 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:02:43.896 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:02:44.123 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:02:44.164 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:02:44.340 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:02:44.341 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.516 seconds (JVM running for 262918.236)
+15:02:44.342 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:03:38.380 [Thread-503] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:03:38.381 [Thread-503] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:03:38.381 [Thread-503] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-101 - Shutdown initiated...
+15:03:38.386 [Thread-503] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-101 - Shutdown completed.
+15:03:38.744 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:03:38.744 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:03:39.073 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:03:39.109 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 3 repository interfaces.
+15:03:39.177 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:03:39.206 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+15:03:39.654 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:03:39.655 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:03:39.655 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+15:03:39.884 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:03:39.884 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1137 ms
+15:03:39.941 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:03:39.947 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-102 - Starting...
+15:03:39.952 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-102 - Start completed.
+15:03:39.952 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:03:40.355 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:03:40.355 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:03:40.368 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:03:40.542 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:03:40.630 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:03:40.732 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:03:40.733 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.035 seconds (JVM running for 262974.628)
+15:03:40.734 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:04:28.050 [Thread-508] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:04:28.050 [Thread-508] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:04:28.051 [Thread-508] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-102 - Shutdown initiated...
+15:04:28.055 [Thread-508] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-102 - Shutdown completed.
+15:04:28.719 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:04:28.719 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:04:29.202 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:04:29.280 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 3 repository interfaces.
+15:04:29.363 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:04:29.398 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+15:04:30.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:04:30.034 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:04:30.034 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+15:04:30.268 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:04:30.268 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1546 ms
+15:04:30.321 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:04:30.326 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-103 - Starting...
+15:04:30.332 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-103 - Start completed.
+15:04:30.332 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:04:30.807 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:04:30.807 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:04:30.820 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:04:31.167 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:04:31.323 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:04:31.574 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:04:31.574 [restartedMain] INFO  com.yash.PtaSpringApplication - Started PtaSpringApplication in 2.901 seconds (JVM running for 263025.469)
+15:04:31.576 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:04:50.002 [Thread-513] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:04:50.004 [Thread-513] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:04:50.007 [Thread-513] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-103 - Shutdown initiated...
+15:04:50.021 [Thread-513] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-103 - Shutdown completed.
+15:04:50.461 [restartedMain] INFO  com.yash.PtaSpringApplication - Starting PtaSpringApplication on YP1010121DT with PID 3876 (C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\git\PTA_Spring\PracticeTestApp)
+15:04:50.461 [restartedMain] INFO  com.yash.PtaSpringApplication - No active profile set, falling back to default profiles: default
+15:04:50.739 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:04:50.791 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 3 repository interfaces.
+15:04:50.856 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:04:50.887 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised

@@ -39,7 +39,7 @@ public class QuestionsController {
 	 * This is QuestionService instance.
 	 */
 	@Autowired
-	QuestionService quesService;
+	QuestionService questionService;
 	
 	
 	/**
@@ -53,7 +53,7 @@ public class QuestionsController {
 	@PostMapping(PtaApi.ADD_QUESTIONS)
 	public Questions addQues(@PathVariable(value="id") int id,@Valid @RequestBody Questions ques)
 	{
-		return quesService.addQuestion(id,ques);
+		return questionService.addQuestion(id,ques);
 	}
 	
 	
@@ -65,7 +65,7 @@ public class QuestionsController {
 	@GetMapping(PtaApi.GET_ALL_QUESTIONS)
 	public ResponseEntity<?> getQuestions()
 	{
-		List<Questions> qList=quesService.getAllQuestions();
+		List<Questions> qList=questionService.getAllQuestions();
 		
 		if (!qList.isEmpty()) {
 			return new ResponseEntity<>(qList,HttpStatus.OK);
@@ -82,7 +82,7 @@ public class QuestionsController {
 	@GetMapping(PtaApi.GET_QUESTION)
     public List<Questions> getById(@PathVariable("id") int id)
     {
-           return quesService.getQuestionsById(id);
+           return questionService.getQuestionsById(id);
     }
 	
 	/**
@@ -100,7 +100,7 @@ public class QuestionsController {
 			return new ResponseEntity<>("Invalid file type..", HttpStatus.BAD_REQUEST);
 		}
 
-		quesService.saveExelData(file);
+		questionService.saveExelData(file);
 		return new ResponseEntity<>("File uploaded successfully", HttpStatus.OK);
 	}
 

@@ -1,7 +1,6 @@
 package com.yash.pta.model;
 
 import java.util.List;
-import javax.xml.bind.annotation.XmlRootElement;
 
 public class ErrorResponse {
 //    public ErrorResponse(String message, List<String> details) {

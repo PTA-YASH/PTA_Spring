@@ -87,6 +87,7 @@ public class UserController {
  
 	@GetMapping(PtaApi.GET_USER)
 	public Optional<User> getUserById(@PathVariable Long id) {
+		LOGGER.info("User ID:"+id);
 		return userServiceApi.getUserById(id);
 		
 	}
@@ -99,6 +100,7 @@ public class UserController {
 	 */
 	@PutMapping(PtaApi.UPDATE_USER)
 	public User updateUser(@RequestBody User user,@PathVariable Long id){
+		LOGGER.info("User ID:"+id+"User:"+user);
 		return userServiceApi.updateUser(user, id);
 		
 	}
@@ -111,6 +113,7 @@ public class UserController {
 	 */
 	@DeleteMapping(PtaApi.DELETE_USER)
 	public void deleteUser(@PathVariable Long id) {
+		LOGGER.info("User ID to delete:"+id);
 		userServiceApi.deleteUser(id);
 	}
 
