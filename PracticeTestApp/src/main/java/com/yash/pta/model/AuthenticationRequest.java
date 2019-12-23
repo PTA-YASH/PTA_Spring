@@ -2,6 +2,7 @@ package com.yash.pta.model;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class AuthenticationRequest implements Serializable  {
 
 	 private String username;

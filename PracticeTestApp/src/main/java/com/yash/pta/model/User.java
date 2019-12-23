@@ -6,70 +6,102 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.stereotype.Component;
 /**
- * 
  * The class helps listens to the user request
- * @author poonam.avhad
- *
+ * User model class which represents user
  */
-
-//User entity
 @Entity
-//@Table(name = "User", uniqueConstraints = { @UniqueConstraint(columnNames = { "loginName" } ) })
-public class User {
+@Table(name = "User")
+@Component
+public class User 
+{
+	/**
+	 * This is User Id
+	 * @Id represents auto-generated primary key
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long usrId;
+	private Long userId;
 
+	/**
+	 * This is User firstName
+	 * @size restricts that User name should be 3 - 10 character.
+	 */
 	@NotBlank(message = "Name cannot be empty!")
-	@Size(min = 5, max = 10, message = "Your name should be between 5 - 10 characters.")
-	private String userName;
+	@Size(min = 3, max = 10, message = "Your name should be between 3 - 10 characters.")
+	private String firstName;
 	
-
+	/**
+	 * This is User lastName
+	 * @size restricts that User name should be 2 - 10 character.
+	 */
+	
+	private String lastName;
+	/**
+	 * This is Contact number
+	 */
 	@Pattern(regexp = "(^$|[0-9]{10})")
-	private String contact;
+	@Column(name  = "contactNo", unique = true) 
+	private String contactNo;
 
-	@Pattern(regexp = ".+@.+\\..+", message = "Wrong email!")
+	/**
+	 * This is email Id of User
+	 */
+	@Pattern(regexp = ".+@yash.com", message = "Not authorize user!")
 	@Column(name  = "email", unique = true) 
 	private String email;
 
-	@NotBlank(message = "Login Name cannot be empty!")
-	@Size(min = 5, max = 10, message = "Your User Name should be between 5 - 10 characters.")
-	@Column(name  = "loginName", unique = true)  
-	private String loginName;
-
-	
+	/**
+	 * This is password which is use for login
+	 * @Length validate that password should be 5 -10 characters
+	 */
 	@NotBlank(message = "Password Name cannot be empty!")
 	@Length(min = 5, max = 10, message = "Password should be between 5 - 10 charactes")
 	private String password;
+	
+	/**
+	 * This is status of User
+	 */
+	private String status;
 
-	public Long getUsrId() {
-		return usrId;
+	/**
+	 * Setter and getters of User entity
+	 */
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setUsrId(Long usrId) {
-		this.usrId = usrId;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public String getContact() {
-		return contact;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setContact(String contact) {
-		this.contact = contact;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getContactNo() {
+		return contactNo;
+	}
+
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
 	}
 
 	public String getEmail() {
@@ -80,14 +112,6 @@ public class User {
 		this.email = email;
 	}
 
-	public String getLoginName() {
-		return loginName;
-	}
-
-	public void setLoginName(String loginName) {
-		this.loginName = loginName;
-	}
-
 	public String getPassword() {
 		return password;
 	}
@@ -96,11 +120,26 @@ public class User {
 		this.password = password;
 	}
 	
-	/*@toString It prints String representation of User object*/
-	@Override
-	public String toString() {
-		return "User [usrId=" + usrId + ", userName=" + userName + ", contact=" + contact + ", email=" + email + ", loginName="
-				+ loginName + ", password=" + password + "]";
+	public String getStatus() {
+		return status;
 	}
 
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	/**
+	 *@toString It prints String representation of User object
+	 */
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", contactNo="
+				+ contactNo + ", email=" + email + ", password=" + password + ", status=" + status + "]";
+	}
+
+
+	
+
+	
+	
 }

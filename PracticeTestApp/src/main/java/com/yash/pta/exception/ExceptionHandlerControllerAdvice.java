@@ -18,11 +18,19 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import com.yash.pta.model.ErrorResponse;
 
 //Global exception handler which handles the exceptions and validate the entity properties
-//@author vinod.nagulkar
+//
 @ControllerAdvice
 public class ExceptionHandlerControllerAdvice extends ResponseEntityExceptionHandler 
 {
-	//This method validate all the properties of entity and catches the errors and sends them to user.
+	
+	/**
+	 * This method validate all the properties of entity and catches the errors and sends them to user.
+	 * @param MethodArgumentNotValidException
+	 * @param HttpHeaders
+	 * @param HttpStatus
+	 * @param WebRequest
+	 * @return ResponseEntity with body,headers,status
+	 */
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
@@ -37,9 +45,12 @@ public class ExceptionHandlerControllerAdvice extends ResponseEntityExceptionHan
 		return new ResponseEntity<Object>(body,headers,status);
 	}
 	
-	
-	 
-	 
+	 /**
+	  * This method handles EmptyTechListException.
+	  * @param Exception object
+	  * @param WebRequest object
+	  * @return ResponseEntity with errors, HTTP status
+	  */
 	 @ExceptionHandler(EmptyTechListException.class)
 	    public ResponseEntity<ErrorResponse> customHandleNotFound(Exception ex, WebRequest request) {
 
@@ -50,10 +61,14 @@ public class ExceptionHandlerControllerAdvice extends ResponseEntityExceptionHan
 	        return new ResponseEntity<>(errors, HttpStatus.NOT_FOUND);
 
 	    }
-	 @ExceptionHandler(InvalidFileContentException.class)
-		public final ResponseEntity<Object> InvalidFileHeadersException(InvalidFileContentException ex) {
+	 /**
+	  * This method handles InvalidHeaderException.
+	  * @param InvalidHeaderException object
+	  * @return ResponseEntity with exception messages and HTTP status
+	  */
+	 @ExceptionHandler(InvalidHeaderException.class)
+		public final ResponseEntity<Object> InvalidFileHeadersException(InvalidHeaderException ex) {
 			 return new ResponseEntity<>(ex.getLocalizedMessage(),
 			  HttpStatus.NOT_ACCEPTABLE);
-			 
 	    }
 }
