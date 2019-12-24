@@ -38,7 +38,7 @@ import com.yash.pta.util.PtaApi;
  * @CrossOrigin annotation to handle Cross-Origin-Resource-Sharing (CORS). 
  */
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
 	@Autowired

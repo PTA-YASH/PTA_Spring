@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
 public class LoginCommand {
 	
 	/**
-	 * This is login name
-	 * @NotBlank validate that login name should not be blank
-	 * @Length restricts that login name should be 5 - 10 characters.
+	 * This is login email
+	 * @NotBlank validate that email  should not be blank
+	 * @Length restricts that email should be yash email
 	 */
 	@NotBlank(message = "User email cannot be empty")
 	@Length( message = "Your yash email should be valid")
@@ -25,13 +25,14 @@ public class LoginCommand {
 	 * @Length restricts that login name should be 5 - 10 characters.
 	 */
 	@NotBlank(message = "Password cannot be empty")
-	@Length(min = 5, max = 10, message = "Password should be between 5 - 10 charactes")
+	@Length(min = 5, message = "Password should be more than 5 charactes")
 	private String password;
-
+ 
 	
 	/**
 	 * Setter and getters of login entity
 	 */
+	
 
 	public String getPassword() {
 		return password;
@@ -48,6 +49,8 @@ public class LoginCommand {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	
 	
 	/**
 	 * @toString It prints String representation of login object
