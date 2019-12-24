@@ -3,10 +3,15 @@ package com.yash.pta.serviceImpl;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.yash.pta.exception.InvalidCredentialsException;
+import com.yash.pta.model.Role;
+import com.yash.pta.model.RoleName;
 import com.yash.pta.model.User;
+import com.yash.pta.repository.RoleRepository;
 import com.yash.pta.repository.UserRepository;
 import com.yash.pta.service.UserServiceApi;
 /**
@@ -24,6 +29,12 @@ public class UserServiceImp implements UserServiceApi{
 	@Autowired
 	UserRepository userRepo;
 	
+	@Autowired
+	RoleRepository roleRepository;
+	
+	@Autowired
+	PasswordEncoder passwordEncoder;
+	
 	/**
 	 * This method registers the user.
 	 * It takes User object as a input and pass it to DAO layer
@@ -32,8 +43,13 @@ public class UserServiceImp implements UserServiceApi{
 	 */
 	@Override
 	public User createUser(User user) {
+		Role userRole = roleRepository.findByName(RoleName.ROLE_TRAINEE);
+
+		user.setPassword(passwordEncoder.encode(user.getPassword()));
+		user.setRole(userRole);
 		userRepo.save(user);
 		return user;
+	
 	}
 	/**
 	 * This method authenticate the user 
@@ -90,5 +106,15 @@ public class UserServiceImp implements UserServiceApi{
 	public void deleteUser(Long id) {
 		// TODO Auto-generated method stub
 		userRepo.deleteById(id);
+	}
+	@Override
+	public User findByEmail(String username) throws InvalidCredentialsException {
+	
+		
+		User loginUserObj = userRepo.findByEmail(username).orElseThrow(
+				() -> new UsernameNotFoundException("User not found with username: " + username));
+		if (loginUserObj == null)
+			throw new InvalidCredentialsException("User not found!");
+		return loginUserObj;
 	}
 }

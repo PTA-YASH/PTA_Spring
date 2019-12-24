@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -25,7 +27,7 @@ public class User
 	 * @Id represents auto-generated primary key
 	 */
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long userId;
 
 	/**
@@ -61,7 +63,7 @@ public class User
 	 * @Length validate that password should be 5 -10 characters
 	 */
 	@NotBlank(message = "Password Name cannot be empty!")
-	@Length(min = 5, max = 10, message = "Password should be between 5 - 10 charactes")
+	@Length(min = 5, message = "Password should be more than 5 charactes")
 	private String password;
 	
 	/**
@@ -69,6 +71,18 @@ public class User
 	 */
 	private String status;
 
+	@ManyToOne
+	@JoinColumn(name = "Role_id") // 
+	private Role role;
+	
+	public Role getRole() {
+		return role;
+	}
+
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
 	/**
 	 * Setter and getters of User entity
 	 */
@@ -128,15 +142,17 @@ public class User
 		this.status = status;
 	}
 
+
 	/**
 	 *@toString It prints String representation of User object
 	 */
+
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", contactNo="
-				+ contactNo + ", email=" + email + ", password=" + password + ", status=" + status + "]";
+				+ contactNo + ", email=" + email + ", password=" + password + ", status=" + status + ", role=" + role
+				+ "]";
 	}
-
 
 	
 

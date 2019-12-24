@@ -44,4 +44,6 @@ public interface UserServiceApi
 	 */
 	void deleteUser(Long id);
 	
+	User findByEmail(String username) throws InvalidCredentialsException;
+	
 }

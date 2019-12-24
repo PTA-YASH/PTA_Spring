@@ -9,6 +9,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,11 +22,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.yash.pta.command.JwtAuthenticationResponse;
 import com.yash.pta.command.LoginCommand;
 import com.yash.pta.exception.InvalidCredentialsException;
+import com.yash.pta.model.Role;
+import com.yash.pta.model.RoleName;
 import com.yash.pta.model.User;
+import com.yash.pta.security.JwtTokenProvider;
 import com.yash.pta.service.UserServiceApi;
 import com.yash.pta.util.PtaApi;
+
 /**
  * This is Rest controller which handles all HTTP requests related to User Entity.
  * @RestController marks this class as controller which handles all HTTP requests.
@@ -34,6 +43,12 @@ public class UserController {
 
 	@Autowired
 	UserServiceApi userServiceApi;
+	
+	@Autowired
+	AuthenticationManager authenticationManager;
+	
+	@Autowired
+	JwtTokenProvider tokenProvider;
 	
 	/**
 	 * This is logger instance.
@@ -65,17 +80,21 @@ public class UserController {
 	 * @throws InvalidCredentialsException if invalid credentials entered.
 	 */
 	 @PostMapping(PtaApi.USER_LOGIN)
-	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginCommand login) throws InvalidCredentialsException {
+	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginCommand loginRequest) throws InvalidCredentialsException {
+		 
+		 //
+		 LOGGER.info("****************Inside the login action****************************");
+		 Authentication authentication = authenticationManager.authenticate(
+					new UsernamePasswordAuthenticationToken(loginRequest.getEmail(), loginRequest.getPassword()));
+			SecurityContextHolder.getContext().setAuthentication(authentication);
+			User user = userServiceApi.findByEmail(loginRequest.getEmail());
+			Role role = user.getRole();
+			RoleName roleNames = role.getName();
+			String jwt = tokenProvider.generateToken(authentication);
+			return ResponseEntity
+					.ok(new JwtAuthenticationResponse(jwt, roleNames, user.getFirstName()));
+		 //
 		
-		LOGGER.info("****************Inside the login action****************************");
-		User loginUserObj = userServiceApi.findByEmailAndPassword(login.getEmail(),login.getPassword());
-
-		LOGGER.info("Login user:", loginUserObj);
-		
-			if(loginUserObj!=null)
-		      return new ResponseEntity<>(loginUserObj, HttpStatus.OK);
-		     else
-			return new ResponseEntity<>("Login failed", HttpStatus.NOT_FOUND);
 	}
 	 
 		/**
